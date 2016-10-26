@@ -22,7 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    NSLog(@"...");
     // 添加所有的子控制器
     [self addAllChildVcs];
     
