@@ -8,8 +8,9 @@
 
 #import "YQNavigationController.h"
 #import "YQLeftBarButtonItemTVC.h"
+#import "YQRightBarButtonItemTVC.h"
 
-@interface YQNavigationController ()
+@interface YQNavigationController ()<CAAnimationDelegate>
 @property (nonatomic) UIButton *rightButton;
 
 @end
@@ -31,6 +32,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   
+    
 }
 
 /**
@@ -65,13 +69,13 @@
         viewController.hidesBottomBarWhenPushed = YES;
     }else
     {
-       viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"imgGroupInvitationIcon" highImageName:nil target:self action:@selector(back)];
-        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"dd_Activity_add" highImageName:nil target:self action:@selector(more:)];
+       viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"imgGroupInvitationIcon" highImageName:nil target:self action:@selector(clickLeftBarButtonItem)];
+        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"dd_Activity_add" highImageName:nil target:self action:@selector(clickRightBarButtonItem:)];
     }
     [super pushViewController:viewController animated:animated];
 }
 
-- (void)back
+- (void)clickLeftBarButtonItem
 {
 #warning 这里用的是self, 因为self就是当前正在使用的导航控制器
     UINavigationController *nai = [[UINavigationController alloc]initWithRootViewController:[[YQLeftBarButtonItemTVC alloc]initWithStyle:UITableViewStylePlain]];
@@ -79,14 +83,16 @@
     [self presentViewController:nai animated:YES completion:nil];
 }
 
-- (void)more:(UIButton *)sender
+- (void)clickRightBarButtonItem:(UIButton *)sender
 {
-    
     sender.selected = !sender.selected;
-    [self s:sender];
+    
+    [self spinButton:sender];
+    
+    [self popViewController];
 }
 
-- (void)s:(UIButton *)sender{
+- (void)spinButton:(UIButton *)sender{
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     if (sender.selected) {
         anim.toValue = @(-M_PI_4);
@@ -99,9 +105,24 @@
     [sender.layer addAnimation:anim forKey:nil];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self s:self.rightButton];
+
+- (void)popViewController{
+    YQRightBarButtonItemTVC* transparentView = [[YQRightBarButtonItemTVC alloc]initWithStyle:UITableViewStylePlain];
+    UINavigationController *nai = [[UINavigationController alloc]initWithRootViewController:transparentView];
+    [self addChildViewController:nai];
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.005;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    transition.delegate = self;
+    
+    [transparentView.view.layer addAnimation:transition forKey:nil];
+    
+    [self.view addSubview:transparentView.view];
 }
+
 
 - (UIButton *)rightButton{
     

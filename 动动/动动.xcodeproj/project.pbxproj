@@ -41,6 +41,9 @@
 		8547A5A51DB8C4E300B1052F /* YQAnalyseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5A41DB8C4E300B1052F /* YQAnalyseTVC.m */; };
 		8547A5A81DB8C51A00B1052F /* YQTargetTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5A71DB8C51A00B1052F /* YQTargetTVC.m */; };
 		8547A5AB1DB8C54200B1052F /* YQGroupTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5AA1DB8C54200B1052F /* YQGroupTVC.m */; };
+		8592C4C21DC2207D00BB1EDB /* YQRightBarButtonItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */; };
+		8592C4C51DC222CF00BB1EDB /* RightBarButtonItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */; };
+		8592C4C81DC2365200BB1EDB /* YQ11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592C4C71DC2365200BB1EDB /* YQ11ViewController.m */; };
 		8594A96A1DB796EA00F0E2E0 /* YQRunVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8594A9691DB796EA00F0E2E0 /* YQRunVC.m */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +109,11 @@
 		8547A5A71DB8C51A00B1052F /* YQTargetTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQTargetTVC.m; sourceTree = "<group>"; };
 		8547A5A91DB8C54200B1052F /* YQGroupTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQGroupTVC.h; sourceTree = "<group>"; };
 		8547A5AA1DB8C54200B1052F /* YQGroupTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQGroupTVC.m; sourceTree = "<group>"; };
+		8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YQRightBarButtonItem.plist; sourceTree = "<group>"; };
+		8592C4C31DC222CF00BB1EDB /* RightBarButtonItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightBarButtonItemModel.h; sourceTree = "<group>"; };
+		8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightBarButtonItemModel.m; sourceTree = "<group>"; };
+		8592C4C61DC2365200BB1EDB /* YQ11ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQ11ViewController.h; sourceTree = "<group>"; };
+		8592C4C71DC2365200BB1EDB /* YQ11ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQ11ViewController.m; sourceTree = "<group>"; };
 		8594A9681DB796EA00F0E2E0 /* YQRunVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRunVC.h; sourceTree = "<group>"; };
 		8594A9691DB796EA00F0E2E0 /* YQRunVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRunVC.m; sourceTree = "<group>"; };
 		AADF830C065EFAF90E669E96 /* Pods-动动.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动动.release.xcconfig"; path = "Pods/Target Support Files/Pods-动动/Pods-动动.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 		852AF8821DBB053900CB610E /* YQNavigationItem */ = {
 			isa = PBXGroup;
 			children = (
+				8592C4C01DC2206900BB1EDB /* Other */,
 				852AF8831DBB053900CB610E /* Controller */,
 				852AF8841DBB053900CB610E /* Model */,
 				852AF8851DBB053900CB610E /* View */,
@@ -169,6 +178,8 @@
 				852AF8871DBB059300CB610E /* YQLeftBarButtonItemTVC.m */,
 				852AF88C1DBB05CF00CB610E /* YQRightBarButtonItemTVC.h */,
 				852AF88D1DBB05CF00CB610E /* YQRightBarButtonItemTVC.m */,
+				8592C4C61DC2365200BB1EDB /* YQ11ViewController.h */,
+				8592C4C71DC2365200BB1EDB /* YQ11ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +187,8 @@
 		852AF8841DBB053900CB610E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8592C4C31DC222CF00BB1EDB /* RightBarButtonItemModel.h */,
+				8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,6 +520,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8592C4C01DC2206900BB1EDB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		C18A4AB18DA7100B628CA5AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +603,7 @@
 				853B6D3E1DB635A40012B6B4 /* Assets.xcassets in Resources */,
 				6BE05DE61DBDA7A700D77907 /* YQProfile.storyboard in Resources */,
 				6BC66C461DBE498700AA351B /* SQCollectionViewCell2.xib in Resources */,
+				8592C4C21DC2207D00BB1EDB /* YQRightBarButtonItem.plist in Resources */,
 				6BC66C4B1DBE737000AA351B /* SQCollectionViewCell3.xib in Resources */,
 				853B6D3C1DB635A40012B6B4 /* Main.storyboard in Resources */,
 				6BC66C3B1DBDF4CC00AA351B /* SQCollectionViewCell1.xib in Resources */,
@@ -651,6 +673,7 @@
 				853B6D361DB635A40012B6B4 /* AppDelegate.m in Sources */,
 				853B6E041DB64BD10012B6B4 /* UIColor+Extension.m in Sources */,
 				853B6DE91DB647510012B6B4 /* UIView+Extension.m in Sources */,
+				8592C4C81DC2365200BB1EDB /* YQ11ViewController.m in Sources */,
 				6BC66C4A1DBE737000AA351B /* SQCollectionViewCell3.m in Sources */,
 				8547A5AB1DB8C54200B1052F /* YQGroupTVC.m in Sources */,
 				852AF8881DBB059300CB610E /* YQLeftBarButtonItemTVC.m in Sources */,
@@ -670,6 +693,7 @@
 				6BFDD9901DBF9866002D2CCE /* SQFourthCell.m in Sources */,
 				853B6DE71DB647510012B6B4 /* UIBarButtonItem+Extension.m in Sources */,
 				6BE05DE01DBD97CB00D77907 /* NSObject+jr_KVO.m in Sources */,
+				8592C4C51DC222CF00BB1EDB /* RightBarButtonItemModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

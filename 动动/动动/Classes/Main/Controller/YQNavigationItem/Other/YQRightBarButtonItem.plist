@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<array>
+		<string>GPS运动</string>
+		<string>路入运动</string>
+		<string>录入体重</string>
+		<string>微信排行榜</string>
+	</array>
+	<key>normalImage</key>
+	<array>
+		<string>dd_Activity_TrackExercise</string>
+		<string>dd_Activity_LogCardio</string>
+		<string>dd_Activity_LogWeight</string>
+		<string>dd_Activity_Wechat</string>
+	</array>
+	<key>highlightImage</key>
+	<array>
+		<string>dd_Activity_TrackExercise_Highlight</string>
+		<string>dd_Activity_LogCardio_Highlight</string>
+		<string>dd_Activity_LogWeight_Highlight</string>
+		<string>dd_Activity_Wechat_Highlight</string>
+	</array>
+</dict>
+</plist>
