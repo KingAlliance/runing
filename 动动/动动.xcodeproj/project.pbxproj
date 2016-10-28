@@ -41,6 +41,7 @@
 		8547A5A51DB8C4E300B1052F /* YQAnalyseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5A41DB8C4E300B1052F /* YQAnalyseTVC.m */; };
 		8547A5A81DB8C51A00B1052F /* YQTargetTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5A71DB8C51A00B1052F /* YQTargetTVC.m */; };
 		8547A5AB1DB8C54200B1052F /* YQGroupTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547A5AA1DB8C54200B1052F /* YQGroupTVC.m */; };
+		855B04DD1DC36923009B994B /* YQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855B04DC1DC36923009B994B /* YQViewController.m */; };
 		8592C4C21DC2207D00BB1EDB /* YQRightBarButtonItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */; };
 		8592C4C51DC222CF00BB1EDB /* RightBarButtonItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */; };
 		8592C4C81DC2365200BB1EDB /* YQ11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592C4C71DC2365200BB1EDB /* YQ11ViewController.m */; };
@@ -109,6 +110,8 @@
 		8547A5A71DB8C51A00B1052F /* YQTargetTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQTargetTVC.m; sourceTree = "<group>"; };
 		8547A5A91DB8C54200B1052F /* YQGroupTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQGroupTVC.h; sourceTree = "<group>"; };
 		8547A5AA1DB8C54200B1052F /* YQGroupTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQGroupTVC.m; sourceTree = "<group>"; };
+		855B04DB1DC36923009B994B /* YQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQViewController.h; sourceTree = "<group>"; };
+		855B04DC1DC36923009B994B /* YQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQViewController.m; sourceTree = "<group>"; };
 		8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YQRightBarButtonItem.plist; sourceTree = "<group>"; };
 		8592C4C31DC222CF00BB1EDB /* RightBarButtonItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightBarButtonItemModel.h; sourceTree = "<group>"; };
 		8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightBarButtonItemModel.m; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 			children = (
 				853B6D341DB635A40012B6B4 /* AppDelegate.h */,
 				853B6D351DB635A40012B6B4 /* AppDelegate.m */,
+				855B04DB1DC36923009B994B /* YQViewController.h */,
+				855B04DC1DC36923009B994B /* YQViewController.m */,
 				853B6D421DB635A40012B6B4 /* Info.plist */,
 				853B6DA71DB647500012B6B4 /* Classes */,
 				853B6D311DB635A40012B6B4 /* Supporting Files */,
@@ -665,6 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855B04DD1DC36923009B994B /* YQViewController.m in Sources */,
 				853B6E071DB64D0F0012B6B4 /* YQNavigationController.m in Sources */,
 				6BC66C451DBE498700AA351B /* SQCollectionViewCell2.m in Sources */,
 				6BC66C411DBE071A00AA351B /* SQSecondCell.m in Sources */,
