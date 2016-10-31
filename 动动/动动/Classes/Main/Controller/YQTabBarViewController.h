@@ -10,4 +10,6 @@
 
 @interface YQTabBarViewController : UITabBarController
 
+@property (nonatomic) UIButton *rightButton;
+
 @end
