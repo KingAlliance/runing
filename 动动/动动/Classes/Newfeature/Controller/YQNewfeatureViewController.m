@@ -240,7 +240,7 @@
  */
 - (void)clickedStart
 {
-    // 显示主控制器（HMTabBarController）
+    // 显示主控制器（YQTabBarViewController）
     YQTabBarViewController *vc = [[YQTabBarViewController alloc] init];
     
     // 切换控制器

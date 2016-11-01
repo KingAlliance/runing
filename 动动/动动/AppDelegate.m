@@ -39,7 +39,7 @@
         // 获得当前打开软件的版本号
         NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
     
-        if ([currentVersion isEqualToString:lastVersion]) { // 当前版本号 == 上次使用的版本：显示HMTabBarViewController
+        if ([currentVersion isEqualToString:lastVersion]) { // 当前版本号 == 上次使用的版本：显示YQTabBarViewController
             self.window.rootViewController = [[YQTabBarViewController alloc] init];
         } else { // 当前版本号 != 上次使用的版本：显示版本新特性
     self.window.rootViewController = [[YQNewfeatureViewController alloc] init];

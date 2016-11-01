@@ -14,7 +14,7 @@
 #import "YQGroupTVC.h"
 #import "YQNavigationController.h"
 
-#import "YQRightBarButtonItemTVC.h"
+#import "YQNaviRightButton.h"
 
 @interface YQTabBarViewController () <CAAnimationDelegate>
 
@@ -61,18 +61,7 @@
     }else{
         anim.toValue = @(0);
         
-        
-        YQRightBarButtonItemTVC* transparentView = [[YQRightBarButtonItemTVC alloc]initWithStyle:UITableViewStylePlain];
-//        UINavigationController *nai = [[UINavigationController alloc]initWithRootViewController:transparentView];
-
-//        CATransition *transition = [CATransition animation];
-//        transition.duration = 0.005;
-//        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//        transition.type = kCATransitionPush;
-////
-//        [transparentView.view.layer addAnimation:transition forKey:nil];
-        
-//        [self.view removeFromSuperview];
+        YQNaviRightButton *transparentView = [[YQNaviRightButton alloc]initWithStyle:UITableViewStylePlain];
         
         CATransition *transition = [CATransition animation];
         transition.duration = 0.15;
@@ -81,15 +70,25 @@
         transition.subtype = kCATransitionFromLeft;
         transition.delegate = self;
         [transparentView.view.layer addAnimation:transition forKey:nil];
-        [transparentView removeFromParentViewController];
+        [self.view removeFromSuperview];
         
-//        // 显示主控制器（HMTabBarController）
-//        YQTabBarViewController *vc = [[YQTabBarViewController alloc] init];
-//        
-//        // 切换控制器
-//        UIWindow *window = [UIApplication sharedApplication].keyWindow;
-//        window.rootViewController = vc;
-//        self.view removeAllSubviews
+//        NSMutableArray *array = [[NSMutableArray alloc]initWithArray:self.viewControllers];
+//        for (UIViewController *vc in array) {
+//            if ([vc isKindOfClass:[YQNaviRightButton class]]) {
+//                [array removeObject:vc];
+//                break;
+//            }
+//        }
+//        self.viewControllers = array;
+        
+        
+        
+        // 显示主控制器（HMTabBarController）
+        YQTabBarViewController *vc = [[YQTabBarViewController alloc] init];
+        
+        // 切换控制器
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+       window.rootViewController = vc;
         
         
     }
@@ -99,22 +98,8 @@
     [sender.layer addAnimation:anim forKey:nil];
 }
 
-//- (void)spinButton:(UIButton *)sender{
-//    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-//    if (sender.selected) {
-//        anim.toValue = @(-M_PI_4);
-//    }else{
-//        anim.toValue = @(0);
-//    }
-//    anim.duration = 0.3;
-//    anim.removedOnCompletion = NO;
-//    anim.fillMode = kCAFillModeForwards;
-//    [sender.layer addAnimation:anim forKey:nil];
-//}
-
-
 - (void)popViewController:(UIButton *)sender{
-    YQRightBarButtonItemTVC* transparentView = [[YQRightBarButtonItemTVC alloc]initWithStyle:UITableViewStylePlain];
+    YQNaviRightButton *transparentView = [[YQNaviRightButton alloc]initWithStyle:UITableViewStylePlain];
     UINavigationController *nai = [[UINavigationController alloc]initWithRootViewController:transparentView];
     [self addChildViewController:nai];
     
@@ -125,7 +110,7 @@
     transition.subtype = kCATransitionFromRight;
     transition.delegate = self;
     
-    [transparentView.view.layer addAnimation:transition forKey:nil];
+    [transparentView.tableView.layer addAnimation:transition forKey:nil];
     
     [self.view addSubview:transparentView.tableView];
     [self.view addSubview:sender];

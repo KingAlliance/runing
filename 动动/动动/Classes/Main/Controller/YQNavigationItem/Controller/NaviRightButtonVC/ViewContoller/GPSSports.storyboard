@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zc3-Pk-QKZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sports-->
+        <scene sceneID="WBu-Xb-KM1">
+            <objects>
+                <tableViewController id="Zc3-Pk-QKZ" customClass="GPSSports" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Rw-je-YUh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="835-7z-7fM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A31-Cc-4r7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A31-Cc-4r7" id="QhV-Tt-LfQ">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cell1" text="请选择运动类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX2-x1-Spb">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TX2-x1-Spb" firstAttribute="leading" secondItem="QhV-Tt-LfQ" secondAttribute="leading" id="4T2-Mm-QQS"/>
+                                                <constraint firstItem="TX2-x1-Spb" firstAttribute="top" secondItem="QhV-Tt-LfQ" secondAttribute="top" id="OaW-zT-YMA"/>
+                                                <constraint firstAttribute="trailing" secondItem="TX2-x1-Spb" secondAttribute="trailing" id="q7h-x6-je1"/>
+                                                <constraint firstAttribute="bottom" secondItem="TX2-x1-Spb" secondAttribute="bottom" id="xPB-7u-gdI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="BsP-E0-Tiv">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BsP-E0-Tiv" id="uNv-d6-vVg">
+                                            <frame key="frameInset" width="375" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_running" translatesAutoresizingMaskIntoConstraints="NO" id="RSO-lE-vZ6">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="IhB-5V-JcF"/>
+                                                        <constraint firstAttribute="width" constant="45" id="W94-zc-dR2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步行/跑步" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwR-Tj-grP">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="kSt-FI-6cp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_selection_off" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-ms-YDA">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="hWf-IR-yVf"/>
+                                                        <constraint firstAttribute="width" constant="25" id="nfn-ku-OPP"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DwR-Tj-grP" firstAttribute="leading" secondItem="RSO-lE-vZ6" secondAttribute="trailing" constant="10" id="2XF-fn-arg"/>
+                                                <constraint firstItem="6EJ-ms-YDA" firstAttribute="leading" secondItem="DwR-Tj-grP" secondAttribute="trailing" constant="166" id="BSY-dp-paK"/>
+                                                <constraint firstItem="DwR-Tj-grP" firstAttribute="centerY" secondItem="uNv-d6-vVg" secondAttribute="centerY" id="IpU-78-jkj"/>
+                                                <constraint firstItem="RSO-lE-vZ6" firstAttribute="centerY" secondItem="uNv-d6-vVg" secondAttribute="centerY" id="W2r-93-nUm"/>
+                                                <constraint firstItem="RSO-lE-vZ6" firstAttribute="leading" secondItem="uNv-d6-vVg" secondAttribute="leading" constant="20" id="lpY-bV-hWL"/>
+                                                <constraint firstItem="6EJ-ms-YDA" firstAttribute="centerY" secondItem="uNv-d6-vVg" secondAttribute="centerY" id="p1T-O8-75f"/>
+                                                <constraint firstAttribute="trailing" secondItem="6EJ-ms-YDA" secondAttribute="trailing" constant="10" id="qM6-ai-Yza"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="qQY-pl-bGH">
+                                        <rect key="frame" x="0.0" y="108" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQY-pl-bGH" id="eFp-sS-45b">
+                                            <frame key="frameInset" width="375" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_biking" translatesAutoresizingMaskIntoConstraints="NO" id="31T-eQ-EN3">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="eTf-n7-6Ee"/>
+                                                        <constraint firstAttribute="width" constant="45" id="frN-Yh-cS7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="骑车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-2o-f38">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="oJI-VB-zdY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_selection_off" translatesAutoresizingMaskIntoConstraints="NO" id="3Db-jD-AQz">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Pnc-eM-U7k"/>
+                                                        <constraint firstAttribute="width" constant="25" id="Zdl-pW-bPR"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3Db-jD-AQz" secondAttribute="trailing" constant="10" id="1LV-TZ-Umx"/>
+                                                <constraint firstItem="3Db-jD-AQz" firstAttribute="leading" secondItem="T6T-2o-f38" secondAttribute="trailing" constant="166" id="Ew3-hk-PUI"/>
+                                                <constraint firstItem="3Db-jD-AQz" firstAttribute="centerY" secondItem="eFp-sS-45b" secondAttribute="centerY" id="RLc-bK-qvG"/>
+                                                <constraint firstItem="31T-eQ-EN3" firstAttribute="leading" secondItem="eFp-sS-45b" secondAttribute="leading" constant="20" id="ThC-jZ-sRu"/>
+                                                <constraint firstItem="T6T-2o-f38" firstAttribute="centerY" secondItem="eFp-sS-45b" secondAttribute="centerY" id="TrV-1k-Uss"/>
+                                                <constraint firstItem="T6T-2o-f38" firstAttribute="leading" secondItem="31T-eQ-EN3" secondAttribute="trailing" constant="10" id="eby-hg-r19"/>
+                                                <constraint firstItem="31T-eQ-EN3" firstAttribute="centerY" secondItem="eFp-sS-45b" secondAttribute="centerY" id="pNq-b3-mi4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Zc3-Pk-QKZ" id="RrK-pP-vKZ"/>
+                            <outlet property="delegate" destination="Zc3-Pk-QKZ" id="JdD-E6-hsG"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="hookLB1" destination="6EJ-ms-YDA" id="K1c-2d-lJ6"/>
+                        <outlet property="hookLB2" destination="3Db-jD-AQz" id="0AW-ns-KH0"/>
+                        <outlet property="titleLB1" destination="DwR-Tj-grP" id="RSE-KU-Bh6"/>
+                        <outlet property="titleLB2" destination="T6T-2o-f38" id="lrA-I7-9jI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1A-pk-HDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-174.06296851574214"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dd_gps_biking" width="32" height="28"/>
+        <image name="dd_gps_running" width="32" height="28"/>
+        <image name="dd_gps_selection_off" width="22" height="22"/>
+    </resources>
+</document>

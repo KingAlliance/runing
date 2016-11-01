@@ -9,7 +9,6 @@
 #import "YQNavigationController.h"
 #import "YQLeftBarButtonItemTVC.h"
 
-
 @interface YQNavigationController ()
 @end
 
@@ -61,7 +60,6 @@
     }
     [super pushViewController:viewController animated:animated];
 }
-
 
 
 - (void)clickLeftBarButtonItem
