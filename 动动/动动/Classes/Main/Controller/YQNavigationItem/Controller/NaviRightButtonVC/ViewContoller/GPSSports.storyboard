@@ -14,14 +14,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <mapView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Cog-ID-for">
+                            <rect key="frame" x="0.0" y="250" width="375" height="370"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </mapView>
                         <sections>
                             <tableViewSection id="835-7z-7fM">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A31-Cc-4r7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="A31-Cc-4r7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A31-Cc-4r7" id="QhV-Tt-LfQ">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cell1" text="请选择运动类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX2-x1-Spb">
@@ -38,11 +42,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="BsP-E0-Tiv">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="BsP-E0-Tiv">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BsP-E0-Tiv" id="uNv-d6-vVg">
-                                            <frame key="frameInset" width="375" height="63"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_running" translatesAutoresizingMaskIntoConstraints="NO" id="RSO-lE-vZ6">
@@ -68,7 +72,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DwR-Tj-grP" firstAttribute="leading" secondItem="RSO-lE-vZ6" secondAttribute="trailing" constant="10" id="2XF-fn-arg"/>
-                                                <constraint firstItem="6EJ-ms-YDA" firstAttribute="leading" secondItem="DwR-Tj-grP" secondAttribute="trailing" constant="166" id="BSY-dp-paK"/>
+                                                <constraint firstItem="6EJ-ms-YDA" firstAttribute="leading" secondItem="DwR-Tj-grP" secondAttribute="trailing" constant="100" id="BSY-dp-paK"/>
                                                 <constraint firstItem="DwR-Tj-grP" firstAttribute="centerY" secondItem="uNv-d6-vVg" secondAttribute="centerY" id="IpU-78-jkj"/>
                                                 <constraint firstItem="RSO-lE-vZ6" firstAttribute="centerY" secondItem="uNv-d6-vVg" secondAttribute="centerY" id="W2r-93-nUm"/>
                                                 <constraint firstItem="RSO-lE-vZ6" firstAttribute="leading" secondItem="uNv-d6-vVg" secondAttribute="leading" constant="20" id="lpY-bV-hWL"/>
@@ -77,11 +81,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="qQY-pl-bGH">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="qQY-pl-bGH">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQY-pl-bGH" id="eFp-sS-45b">
-                                            <frame key="frameInset" width="375" height="63"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_gps_biking" translatesAutoresizingMaskIntoConstraints="NO" id="31T-eQ-EN3">
@@ -107,7 +111,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="3Db-jD-AQz" secondAttribute="trailing" constant="10" id="1LV-TZ-Umx"/>
-                                                <constraint firstItem="3Db-jD-AQz" firstAttribute="leading" secondItem="T6T-2o-f38" secondAttribute="trailing" constant="166" id="Ew3-hk-PUI"/>
+                                                <constraint firstItem="3Db-jD-AQz" firstAttribute="leading" secondItem="T6T-2o-f38" secondAttribute="trailing" constant="100" id="Ew3-hk-PUI"/>
                                                 <constraint firstItem="3Db-jD-AQz" firstAttribute="centerY" secondItem="eFp-sS-45b" secondAttribute="centerY" id="RLc-bK-qvG"/>
                                                 <constraint firstItem="31T-eQ-EN3" firstAttribute="leading" secondItem="eFp-sS-45b" secondAttribute="leading" constant="20" id="ThC-jZ-sRu"/>
                                                 <constraint firstItem="T6T-2o-f38" firstAttribute="centerY" secondItem="eFp-sS-45b" secondAttribute="centerY" id="TrV-1k-Uss"/>
@@ -127,6 +131,7 @@
                     <connections>
                         <outlet property="hookLB1" destination="6EJ-ms-YDA" id="K1c-2d-lJ6"/>
                         <outlet property="hookLB2" destination="3Db-jD-AQz" id="0AW-ns-KH0"/>
+                        <outlet property="mapView" destination="Cog-ID-for" id="7wv-Qx-P08"/>
                         <outlet property="titleLB1" destination="DwR-Tj-grP" id="RSE-KU-Bh6"/>
                         <outlet property="titleLB2" destination="T6T-2o-f38" id="lrA-I7-9jI"/>
                     </connections>

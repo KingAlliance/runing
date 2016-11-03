@@ -30,6 +30,7 @@
 
 + (UIImage *)imageWithMode:(NSString *)name{
     UIImage *image = [[UIImage imageNamed:name] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
     return image;
 }
 

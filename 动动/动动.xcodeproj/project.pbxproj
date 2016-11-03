@@ -45,6 +45,7 @@
 		856F54531DC8497A00F2D3F8 /* InputWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F54501DC8497A00F2D3F8 /* InputWeight.m */; };
 		856F54651DC86C2700F2D3F8 /* GPSSports.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F54631DC86C2700F2D3F8 /* GPSSports.m */; };
 		856F546C1DC877DE00F2D3F8 /* GPSSports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856F546B1DC877DE00F2D3F8 /* GPSSports.storyboard */; };
+		8590220A1DCB31FC001C75CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859022091DCB31FC001C75CF /* MapKit.framework */; };
 		8592C4C21DC2207D00BB1EDB /* YQRightBarButtonItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */; };
 		8592C4C51DC222CF00BB1EDB /* RightBarButtonItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */; };
 		8594A96A1DB796EA00F0E2E0 /* YQRunVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8594A9691DB796EA00F0E2E0 /* YQRunVC.m */; };
@@ -119,6 +120,7 @@
 		856F54621DC86C2700F2D3F8 /* GPSSports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSSports.h; sourceTree = "<group>"; };
 		856F54631DC86C2700F2D3F8 /* GPSSports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSSports.m; sourceTree = "<group>"; };
 		856F546B1DC877DE00F2D3F8 /* GPSSports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPSSports.storyboard; sourceTree = "<group>"; };
+		859022091DCB31FC001C75CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8592C4C11DC2207D00BB1EDB /* YQRightBarButtonItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YQRightBarButtonItem.plist; sourceTree = "<group>"; };
 		8592C4C31DC222CF00BB1EDB /* RightBarButtonItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightBarButtonItemModel.h; sourceTree = "<group>"; };
 		8592C4C41DC222CF00BB1EDB /* RightBarButtonItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightBarButtonItemModel.m; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8590220A1DCB31FC001C75CF /* MapKit.framework in Frameworks */,
 				1B80743380596B477D4AB872 /* libPods-动动.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +579,7 @@
 		C18A4AB18DA7100B628CA5AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				859022091DCB31FC001C75CF /* MapKit.framework */,
 				4EFCD967E6C3B1AA75A8B4B0 /* libPods-动动.a */,
 			);
 			name = Frameworks;
@@ -616,7 +620,7 @@
 				TargetAttributes = {
 					853B6D2D1DB635A40012B6B4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FF8Q3J9QT5;
+						DevelopmentTeam = 9LUF5Z94A9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -861,12 +865,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = FF8Q3J9QT5;
+				DEVELOPMENT_TEAM = 9LUF5Z94A9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "动动/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.CSQ.dongdong;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CSQ.zzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -877,12 +881,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = FF8Q3J9QT5;
+				DEVELOPMENT_TEAM = 9LUF5Z94A9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "动动/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.CSQ.dongdong;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CSQ.zzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

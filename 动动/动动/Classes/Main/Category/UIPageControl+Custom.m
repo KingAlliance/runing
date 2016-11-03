@@ -9,7 +9,7 @@
 @import UIKit;
 @import Foundation;
 #import "UIPageControl+Custom.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 
 @implementation UIPageControl (Custom)
 

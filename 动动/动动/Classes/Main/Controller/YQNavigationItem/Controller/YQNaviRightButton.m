@@ -36,6 +36,7 @@
     
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.scrollEnabled = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     //默认显示数据
     _displayNum = 0;
@@ -47,10 +48,6 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self top];
-}
-
-- (void)top{
     CATransition *transition = [CATransition animation];
     transition.duration = 0.9;
     transition.timingFunction = UIViewAnimationOptionCurveEaseInOut;
@@ -62,7 +59,6 @@
     
     [self.view removeFromSuperview];
     self.navigationController.navigationBarHidden = NO;
-    
 }
 
 
@@ -125,7 +121,7 @@
     vc.title = _titleName[indexPath.row];
     navi.navigationBar.barStyle = UIBarStyleBlack;
     
-    [self presentViewController:navi animated:YES completion:nil];
+    [self.navigationController.topViewController presentViewController:navi animated:YES completion:nil];
     NSArray *highlightImage = @[@"dd_Activity_TrackExercise_Highlight", @"dd_Activity_LogCardio_Highlight", @"dd_Activity_LogWeight_Highlight", @"dd_Activity_Wechat_Highlight"];
     cell.imageView.image = [UIImage imageNamed:highlightImage[indexPath.row]];
 }

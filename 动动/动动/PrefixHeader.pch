@@ -30,7 +30,7 @@
 #import "UIPageControl+Custom.h"
 #import "JRObserverInfo.h"
 #import "NSObject+jr_KVO.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 /*
 #import "NSString+YX.h"
 #import "NSObject+Parse.h"

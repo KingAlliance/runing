@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+jr_KVO.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 
 #define JRKVOClassPrefix @"JRKVO_"
 #define JRAssociateArrayKey @"JRAssociateArrayKey"
